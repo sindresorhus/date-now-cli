@@ -1,0 +1,37 @@
+{
+	"name": "date-now-cli",
+	"version": "0.0.0",
+	"description": "Prints the current UNIX timestamp - Just `Date.now()` on the command-line",
+	"license": "MIT",
+	"repository": "sindresorhus/date-now-cli",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"bin": {
+		"date-now": "cli.js"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"unix",
+		"timestamp",
+		"time",
+		"date"
+	],
+	"devDependencies": {
+		"ava": "*",
+		"execa": "^0.10.0",
+		"xo": "*"
+	}
+}
