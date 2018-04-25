@@ -1,6 +1,6 @@
 # date-now-cli [![Build Status](https://travis-ci.org/sindresorhus/date-now-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/date-now-cli)
 
-> Prints the current UNIX timestamp - Just `Date.now()` on the command-line
+> Prints the elapsed milliseconds since the introduction of the Unix timestamp - Just `Date.now()` on the command-line
 
 Similar to the `date +%s` command, but cross-platform and prints milliseconds instead of seconds.
 
