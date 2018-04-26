@@ -29,12 +29,14 @@
 		"time",
 		"date"
 	],
+	"dependencies": {
+		"date-fns": "1.29.0",
+		"meow": "5.0.0",
+		"terminal-link": "1.1.0"
+	},
 	"devDependencies": {
 		"ava": "*",
 		"execa": "^0.10.0",
 		"xo": "*"
-	},
-	"dependencies": {
-		"meow": "5.0.0"
 	}
 }
