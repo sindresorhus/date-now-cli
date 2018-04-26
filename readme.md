@@ -1,6 +1,6 @@
 # date-now-cli [![Build Status](https://travis-ci.org/sindresorhus/date-now-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/date-now-cli)
 
-> Prints the current UNIX timestamp - Just `Date.now()` on the command-line
+> Prints the current date and time as a UNIX timestamp or custom format
 
 Similar to the `date +%s` command, but cross-platform and prints milliseconds instead of seconds.
 
@@ -21,8 +21,21 @@ $ npx date-now-cli
 ## Usage
 
 ```
-$ date-now
-1524642123458
+$ date-now --help
+
+  Usage
+    $ date-now
+
+  Options
+    --format=<string>, -f  Format the date
+
+  Examples
+    $ date-now
+    1524733860619
+    $ date-now --format='DD.MM.YYYY'
+    26.04.2018
+
+  See the date-fns docs for supported formats
 ```
 
 
