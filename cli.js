@@ -2,8 +2,9 @@
 'use strict';
 const meow = require('meow');
 const formatter = require('date-fns/format');
+const terminalLink = require('terminal-link');
 
-const DEFAULT_FORMAT = 'x';
+const termLink = terminalLink('date-fns', 'https://date-fns.org/v1.29.0/docs/format');
 const cli = meow(`
       Usage
         $ date-now
@@ -11,17 +12,27 @@ const cli = meow(`
         --format <format>, -f Get Formatted Output
       Examples
         $ date-now
+          1524733860619 //Output
         $ date-now --format  "DD.MM.YYYY"
-    `,
-  {
-    flags: {
-      format: {
-        type: 'string',
-        alias: 'f'
-      }
-    }
-  }
+          26.04.2018 //Output
+        For supported date formats please visit ${termLink}
+    `, {
+	flags: {
+		format: {
+			type: 'string',
+			alias: 'f'
+		}
+	}
+}
 );
-const format = cli.flags.format || DEFAULT_FORMAT;
-console.log(formatter(new Date(), format))
+if ('format' in cli.flags) {
+	const {format} = cli.flags;
+	if (format) {
+    console.log(formatter(new Date(), format));
+	} else {
+    console.log(`Please specify a format.Visit  ${termLink} for supported date formats`);
+	}
+} else {
+  console.log(Date.now());
+}
 
