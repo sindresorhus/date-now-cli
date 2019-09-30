@@ -41,7 +41,7 @@ $ date-now --help
 
 ## Related
 
-- [delay-cli](https://github.com/sindresorhus/delay-cli) - Delay execution for a given amount of seconds
+- [date-fns](https://github.com/date-fns/date-fns) - Modern JavaScript date utility library
 
 
 ## License
