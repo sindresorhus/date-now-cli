@@ -1,4 +1,4 @@
-# date-now-cli [![Build Status](https://travis-ci.org/sindresorhus/date-now-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/date-now-cli)
+# date-now-cli
 
 > Prints the current date and time as a UNIX timestamp or custom format
 
