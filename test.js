@@ -7,7 +7,7 @@ test('main', async t => {
 });
 
 test('format option', async t => {
-	const {stdout} = await execa('./cli.js', ['--format', 'YYYY']);
+	const {stdout} = await execa('./cli.js', ['--format', 'yyyy']);
 	const expectedOut = new Date().getFullYear();
 	t.is(Number(stdout), expectedOut);
 });

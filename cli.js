@@ -1,10 +1,9 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const formatter = require('date-fns/format');
-const terminalLink = require('terminal-link');
+import meow from 'meow';
+import {format as formatter} from 'date-fns';
+import terminalLink from 'terminal-link';
 
-const link = terminalLink('date-fns', 'https://date-fns.org/v1.29.0/docs/format');
+const link = terminalLink('date-fns', 'https://date-fns.org/docs/format');
 
 const cli = meow(`
 	Usage
@@ -16,17 +15,18 @@ const cli = meow(`
 	Examples
 	  $ date-now
 	  1524733860619
-	  $ date-now --format='DD.MM.YYYY'
-	  26.04.2018
+	  $ date-now --format='dd.MM.yyyy'
+	  11.08.2021
 
 	See the ${link} docs for supported formats
 `, {
+	importMeta: import.meta,
 	flags: {
 		format: {
 			type: 'string',
-			alias: 'f'
-		}
-	}
+			alias: 'f',
+		},
+	},
 });
 
 const {format} = cli.flags;

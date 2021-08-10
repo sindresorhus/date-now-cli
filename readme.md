@@ -4,7 +4,6 @@
 
 Similar to the `date +%s` command, but cross-platform and prints milliseconds instead of seconds.
 
-
 ## Install
 
 ```
@@ -16,7 +15,6 @@ Or for a one-time run:
 ```
 $ npx date-now-cli
 ```
-
 
 ## Usage
 
@@ -32,18 +30,12 @@ $ date-now --help
   Examples
     $ date-now
     1524733860619
-    $ date-now --format='DD.MM.YYYY'
-    26.04.2018
+    $ date-now --format='dd.MM.yyyy'
+    11.08.2021
 
   See the date-fns docs for supported formats
 ```
 
-
 ## Related
 
 - [delay-cli](https://github.com/sindresorhus/delay-cli) - Delay execution for a given amount of seconds
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
