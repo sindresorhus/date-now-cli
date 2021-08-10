@@ -1,6 +1,6 @@
 {
 	"name": "date-now-cli",
-	"version": "1.1.0",
+	"version": "2.0.0",
 	"description": "Prints the current date and time as a UNIX timestamp or custom format",
 	"license": "MIT",
 	"repository": "sindresorhus/date-now-cli",
